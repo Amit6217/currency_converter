@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>currency convertor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="countryList.js"></script>
+    <script src="curr_detail.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="heading">
+            <p id="headingName">currency converter</p>
+        </div>
+
+        <div class="converter">
+            <div class="from">
+                <p class="ft">From</p>
+                <div class="select-container border">
+                    <img src="https://flagsapi.com/US/flat/64.png" />
+                    <select name="from"></select>
+                </div>
+                <input type="text" name="currfrom" id="amountFrom" class="inp" value="1">
+            </div>
+            <div class="arrow">
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            </div>
+            <div class="to">
+                <p class="ft">TO</p>
+                <div class="select-container border">
+                    <img src="https://flagsapi.com/IN/flat/64.png" />
+                    <select name="to">
+                    </select>
+                </div>
+                <input type="text" name="currto" id="amountTo" class="inp" value="83">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
