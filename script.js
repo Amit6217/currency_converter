@@ -27,6 +27,9 @@ for (let i of select) {
     i.addEventListener("change", (e) => {
         updateFlag(e.target);
     });
+    i.addEventListener("change", (e) => {
+        updateSymbol(e.target);
+    });
 }
 
 function updateFlag(element) {
@@ -36,6 +39,13 @@ function updateFlag(element) {
     let img = element.parentElement.querySelector("img");
     img.src = imgURL;
 };
+
+function updateSymbol(element) {
+    let currCode = element.value;
+    let currency = curr_detail[currCode].symbol;
+    let paraElement = element.parentNode.parentNode.children[2].children[0];
+    paraElement.innerHTML = currency;
+}
 
 const updateExchangeRateFrom = async () => {
     let amountValueFrom = amountFrom.value;

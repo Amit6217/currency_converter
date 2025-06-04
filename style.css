@@ -10,7 +10,7 @@ body {
     justify-content: center;
     min-height: 100vmin;
     align-items: center;
-    background-color: #efd9ceb6;
+    background-color: #0B3954;
 }
 
 .main {
@@ -18,7 +18,7 @@ body {
     border: 1px solid black;
     border-radius: 2vmin;
     box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.6);
-    background-color: #EFD9CE;
+    background-color: #daf0fb;
 }
 
 .heading {
@@ -68,7 +68,7 @@ i {
     margin-top: 2vmin;
     display: flex;
 
-    select {
+    .countrySelect {
         background-color: transparent;
         width: 30vmin;
         outline: none;
@@ -84,22 +84,38 @@ i {
     border-radius: 1vmin;
 }
 
-.inp {
-    outline: none;
-    cursor: default;
-    padding-left: 2vmin;
-    height: 7vmin;
-    background-color: transparent;
-    border-radius: 1vmin;
+.symbol-amount {
     border: 1px solid black;
-    font-size: 2.25vmin;
+    border-radius: 1vmin;
+    height: 7vmin;
+    display: flex;
+    align-items: center;
+
+    input {
+        background-color: transparent;
+        font-size: 2.25vmin;
+        outline: none;
+        cursor: pointer;
+    }
+
+    p {
+        padding-left: 1vmin;
+        padding-right: 1vmin;
+        font-size: 3vmin;
+        font-weight: 500;
+    }
+
 }
 
-.inp:hover {
+.symbol-amount:hover {
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.1);
 }
 
 .border :hover {
     background-color: rgba(0, 0, 0, 0.1);
+}
+
+.div2 {
+    flex-grow: 1;
 }

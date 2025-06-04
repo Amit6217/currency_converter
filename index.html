@@ -24,9 +24,12 @@
                 <p class="ft">From</p>
                 <div class="select-container border">
                     <img src="https://flagsapi.com/US/flat/64.png" />
-                    <select name="from"></select>
+                    <select name="from" class="countrySelect"></select>
                 </div>
-                <input type="text" name="currfrom" id="amountFrom" class="inp" value="1">
+                <div class="symbol-amount">
+                    <p class="symbolTo">$</p>
+                    <input type="text" name="currfrom" id="amountFrom" class="inp" value="1">
+                </div>
             </div>
             <div class="arrow">
                 <i class="fa-solid fa-arrow-right-arrow-left"></i>
@@ -35,10 +38,13 @@
                 <p class="ft">TO</p>
                 <div class="select-container border">
                     <img src="https://flagsapi.com/IN/flat/64.png" />
-                    <select name="to">
+                    <select name="to" class="countrySelect">
                     </select>
                 </div>
-                <input type="text" name="currto" id="amountTo" class="inp" value="83">
+                <div class="symbol-amount">
+                    <p class="symbolTo">&#8377</p>
+                    <input type="text" name="currto" id="amountTo" class="inp" value="83">
+                </div>
             </div>
         </div>
     </div>
