@@ -30,6 +30,9 @@ for (let i of select) {
     i.addEventListener("change", (e) => {
         updateSymbol(e.target);
     });
+    i.addEventListener('change',(e)=>{
+        updateExchangeRateFrom();
+    })
 }
 
 function updateFlag(element) {
